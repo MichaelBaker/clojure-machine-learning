@@ -1,6 +1,13 @@
 (ns adult-data.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(use '[incanter.io      :only [read-dataset]])
+(use '[clojure-csv.core :only [parse-csv]])
+
+(defn -main []
+  (print
+    (map
+      (fn [row] (println row))
+      (take
+        10
+        (parse-csv
+          (slurp "resources/adult.data"))))))

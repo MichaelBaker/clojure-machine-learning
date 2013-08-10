@@ -3,5 +3,7 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.5.1"]
-                 [clojure-csv          "2.0.1"]])
+  :dependencies [[org.clojure/clojure    "1.5.1"]
+                 [clojure-csv            "2.0.1"]
+                 [incanter/incanter-io   "1.5.2"]
+                 [incanter/incanter-core "1.5.2"]])
